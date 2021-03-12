@@ -1,0 +1,26 @@
+
+
+
+<dl>
+
+    <td>Nombre: </td>
+    <dd> {{nombre}} </dd>
+
+    <td>Edad: </td>
+    <h1> {{edad}} </h1>
+
+    <td>Funcion: </td>
+    <h1> {{obtenerNombre()}} </h1>
+
+    <td>  Capitalizado: </td>
+    <h1> {{ nombreCapitalizado }} </h1>
+
+</dl>
+
+<button (click) = 'cambiarNombre()'>
+  Cambiar heroe
+</button>
+
+<button (click)="cambiarEdad()">
+  Cambiar edad
+</button>
