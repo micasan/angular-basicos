@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HeroesModule } from './heroes/heroes.module';
 
 import { AppComponent } from './app.component';
+import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
+
 import { ContadorModule } from './contador/contador.module';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -13,11 +18,17 @@ import { ContadorModule } from './contador/contador.module';
   imports: [
     BrowserModule,
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    DbzModule,
+    FormsModule
   ],
 
   providers: [],
 
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+
+export class AppModule {
+
+}
